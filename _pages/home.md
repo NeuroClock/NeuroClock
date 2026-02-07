@@ -10,6 +10,10 @@ permalink: /
 
 We research clocks in Neurons at [UoL ggc](https://le.ac.uk/ggb). 
 
+Our PI:
+- Bambos
+- Ezio
+
 Our animals:  
 - Fruit fly
 - Black sodier fly
@@ -68,10 +72,6 @@ Our genes:
 We are researching xxx.
 
 **We are looking for passionate new PhD students, Postdocs, and Master students to join the team [(more info)](https://neuroclock.github.io/vacancies)**!
-
-
-
-
 
 <figure class="fifth">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/LMU_logo.png" style="width: 130px">
