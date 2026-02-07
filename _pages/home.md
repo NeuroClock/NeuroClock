@@ -11,15 +11,15 @@ permalink: /
 We research clocks in Neurons at [UoL ggc](https://le.ac.uk/ggb). 
 
 Our animals:  
-- fruit fly
-- black sodier fly
+- Fruit fly
+- Black sodier fly
 - Comb jellies
-- 
+- Mosquitoes
 
 Our genes:
-- clock genes
-- opsin genes
-- Magnetogenetics
+- Clock genes
+- Opsin genes
+- Magnetoreceptor
 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <!-- Menu -->
@@ -65,9 +65,9 @@ Our genes:
 </div>
 
 
-We are currently building up our instruments right in the center of Munich, in the *Sommerfeldkeller*, where Sommerfeld and Röntgen worked. We will exchange ideas with world class groups working in quantum physics, cold-atom many-body physics, and 2d quantum materials. We are also a proud member of the [SuperC consortium](https://superc2033.com/our-team/).
+We are researching xxx.
 
-**We are looking for passionate new PhD students, Postdocs, and Master students to join the team** [(more info)](https://www.allanlab.org/vacancies) **!**
+**We are looking for passionate new PhD students, Postdocs, and Master students to join the team [(more info)](https://neuroclock.github.io/vacancies)**!
 
 
 
