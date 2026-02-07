@@ -1,7 +1,7 @@
 ---
-title: "Allan Lab - Home"
+title: "NeuroClock Lab - Home"
 layout: homelay
-excerpt: "Allan Lab at Leiden University &rarr; LMU."
+excerpt: "NeuroClock Lab at University of Leicester &rarr; UoL."
 sitemap: false
 permalink: /
 ---
