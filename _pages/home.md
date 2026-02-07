@@ -6,7 +6,7 @@ sitemap: false
 permalink: /
 ---
 
-**News: Our group moved to Hodgkin (UoL)!**
+**News: Our group moved to Hodgkin (UoL) the 6th floor!**
 
 We are a dynamic research group at [LMU physics](https://www.physik.lmu.de/en/index.html) and at the [Leiden Institute of Physics](http://www.physics.leidenuniv.nl/). 
 
