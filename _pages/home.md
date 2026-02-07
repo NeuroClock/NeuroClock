@@ -10,7 +10,7 @@ permalink: /
 
 We research clocks in Neurons at [UoL ggc](https://le.ac.uk/ggb). 
 
-Our PI:
+Our PIs:
 - Bambos
 - Ezio
 
