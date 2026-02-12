@@ -40,7 +40,7 @@ Our genes:
     <!-- Items -->
     <div class="carousel-inner" markdown="0">
         <div class="item active">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/lab_pic/show/bambos.PNG" alt="Slide 1" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/lab_pic/show/bambos.png" alt="Slide 1" />
         </div>
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/lab_pic/show/eury_tidal.jpg" alt="Slide 2" />
@@ -69,7 +69,7 @@ Our genes:
 </div>
 
 
-We are researching Clocks.
+We are researching Clocks and magnetic sensors.
 
 **We are looking for passionate new PhD students, Postdocs, and Master students to join the team [(more info)](https://neuroclock.github.io/vacancies)**!
 
