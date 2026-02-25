@@ -1,7 +1,7 @@
 ---
-title: "Allan Lab - Team"
+title: "Clock Lab - Team"
 layout: gridlay
-excerpt: "Allan Lab: Team members"
+excerpt: "Clock Lab: Team members"
 sitemap: false
 permalink: /team/
 ---
@@ -10,73 +10,45 @@ permalink: /team/
 
  **We are  looking for new PhD students, Postdocs, and Master students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
 
+Jump to [PI](#pi), [Postdoc](#postdoc), [PhD](#phd), [master](#master), [visitor](#visitor), [honorary](#honary), [alumni](#alumni)
 
-Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors).
-
-## Staff
+## PI
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
 {% if even_odd == 0 %}
-<div class="row">
+<div class="row" style="margin-bottom: 30px;">
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  <li> {{ member.education4 | markdownify}} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  <li> {{ member.education4 | markdownify}} </li>
-  <li> {{ member.education5 | markdownify}} </li>
-  {% endif %}
-
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left; margin-right: 15px;" />
+  
+  <h4 style="margin-top: 0;">{{ member.name }}</h4>
+  
+  <ul class="list-unstyled">
+    {% if member.email %}
+      <li><i class="fa fa-envelope"></i> <a href="mailto:{{ member.email }}">{{ member.email }}</a></li>
+    {% endif %}
+    
+    {% if member.orcid %}
+      <li><i class="ai ai-orcid"></i> <a href="https://orcid.org/{{ member.orcid }}">ORCID Profile</a></li>
+    {% endif %}
+    
+    {% if member.linkedin %}
+      <li><i class="fa fa-linkedin"></i> <a href="{{ member.linkedin }}">LinkedIn</a></li>
+    {% endif %}
   </ul>
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
 
-{% if even_odd == 1 %}
+{% comment %} Close the row after every 2 members or at the end of the loop {% endcomment %}
+{% if even_odd == 1 or forloop.last %}
 </div>
 {% endif %}
-
 {% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-
-
 
 ## Master and Bachelor Students
 {% assign number_printed = 0 %}
