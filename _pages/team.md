@@ -22,9 +22,14 @@ Jump to [PI](#pi), [Postdoc](#postdoc), [PhD](#phd), [master](#master), [visitor
 <div class="row" style="margin-bottom: 30px;">
 {% endif %}
 
-<div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left; margin-right: 15px;" />
-  
+<!-- <div class="col-sm-6 clearfix">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left; margin-right: 15px;" /> -->
+
+<div class="col-sm-6 d-flex align-items-start">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" 
+       class="img-responsive" 
+       style="width: 25%; margin-right: 15px;" />
+
   <h4 style="margin-top: 0;">{{ member.name }}</h4>
   
   <ul class="list-unstyled">
