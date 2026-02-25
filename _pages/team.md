@@ -29,7 +29,7 @@ Jump to [PI](#pi), [Postdoc](#postdoc), [PhD](#phd), [master](#master), [visitor
   
   <ul class="list-unstyled">
     {% if member.email %}
-      <li><i class="fa fa-envelope"></i> <a href="mailto:{{ member.email }}">{{ member.email }}</a></li>
+      <li><i class="fa fa-envelope"></i> <a href="mailto:{{ member.email }}">email: {{ member.email }}</a></li>
     {% endif %}
     
     {% if member.orcid %}
