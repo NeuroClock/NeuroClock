@@ -28,8 +28,12 @@ Jump to [PI](#pi), [Postdoc](#postdoc), [PhD](#phd), [master](#master), [visitor
   <h4 style="margin-top: 0;">{{ member.name }}</h4>
   
   <ul class="list-unstyled">
+    {% if member.tittle %}
+      <li><i class="fa fa-graduation-cap"></i> {{ member.tittle }}</li>
+    {% endif %}
+
     {% if member.email %}
-      <li><i class="fa fa-envelope"></i> email: {{ member.email }}</li>
+      <li><i class="fa fa-envelope"></i> {{ member.email }}</li>
     {% endif %}
     
     {% if member.orcid %}

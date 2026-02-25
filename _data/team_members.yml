@@ -1,14 +1,14 @@
 - name: Bambos
   role: pi
   photo: bambos.png
-  info: Professor
+  tittle: Professor
   email: cpk@leicester.ac.uk
   orcid: 0000-0003-4889-7606
-  
+
 
 - name: Ezio
   role: pi
   photo: ezio.jfif
-  info: Professor
+  tittle: Professor
   email: er6@leicester.ac.uk
   orcid: 0000-0001-7297-4697
