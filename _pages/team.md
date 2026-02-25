@@ -13,47 +13,41 @@ permalink: /team/
 Jump to [PI](#pi), [Postdoc](#postdoc), [PhD](#phd), [master](#master), [visitor](#visitor), [honorary](#honary), [alumni](#alumni)
 
 ## PI
-{% assign pi = site.data.team_members | where: "role", "pi" | first %}
-{% if pi %}
-<div class="row" style="margin-bottom: 50px; border-bottom: 1px solid #ddd; padding-bottom: 20px;">
-  <div class="col-sm-12">
-    <h3>Principal Investigator</h3>
-    <div class="clearfix">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ pi.photo }}" class="img-responsive" width="15%" style="float: left; margin-right: 20px;" />
-      <h4>{{ pi.name }}</h4>
-      <p style="line-height: 1.2;">
-        {% if pi.email %}<strong>email:</strong> {{ pi.email }}<br>{% endif %}
-        {% if pi.orcid %}<strong>orcid:</strong> {{ pi.orcid }}<br>{% endif %}
-        {% if pi.linkedin %}<strong>linkedin:</strong> <a href="{{ pi.linkedin }}">Profile</a>{% endif %}
-      </p>
-    </div>
-  </div>
-</div>
-{% endif %}
-
-<h3>Team Members</h3>
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
-  {% if member.role != "pi" %}
-    {% assign even_odd = number_printed | modulo: 2 %}
 
-    {% if even_odd == 0 %}
-    <div class="row" style="margin-bottom: 30px;">
+{% assign even_odd = number_printed | modulo: 2 %}
+
+{% if even_odd == 0 %}
+<div class="row" style="margin-bottom: 30px;">
+{% endif %}
+
+<div class="col-sm-6 clearfix">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left; margin-right: 15px;" />
+  
+  <h4 style="margin-top: 0;">{{ member.name }}</h4>
+  
+  <ul class="list-unstyled">
+    {% if member.email %}
+      <li><i class="fa fa-envelope"></i> <a href="mailto:{{ member.email }}">{{ member.email }}</a></li>
     {% endif %}
+    
+    {% if member.orcid %}
+      <li><i class="ai ai-orcid"></i> <a href="https://orcid.org/{{ member.orcid }}">ORCID Profile</a></li>
+    {% endif %}
+    
+    {% if member.linkedin %}
+      <li><i class="fa fa-linkedin"></i> <a href="{{ member.linkedin }}">LinkedIn</a></li>
+    {% endif %}
+  </ul>
+</div>
 
-    <div class="col-sm-6 clearfix">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left; margin-right: 15px;" />
-      <h4>{{ member.name }}</h4>
-      <p style="font-size: 0.9em; line-height: 1.2;">
-        {% if member.email %}<strong>email:</strong> {{ member.email }}<br>{% endif %}
-        {% if member.orcid %}<strong>orcid:</strong> {{ member.orcid }}<br>{% endif %}
-        {% if member.linkedin %}<strong>linkedin:</strong> <a href="{{ member.linkedin }}">Profile</a>{% endif %}
-      </p>
-    </div>
+{% assign number_printed = number_printed | plus: 1 %}
 
-    {% assign number_printed = number_printed | plus: 1 %}
-    {% if even_odd == 1 or forloop.last %}<div style="clear:both;"></div></div>{% endif %}
-  {% endif %}
+{% comment %} Close the row after every 2 members or at the end of the loop {% endcomment %}
+{% if even_odd == 1 or forloop.last %}
+</div>
+{% endif %}
 {% endfor %}
 
 ## Master and Bachelor Students
