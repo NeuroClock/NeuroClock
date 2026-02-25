@@ -13,41 +13,32 @@ permalink: /team/
 Jump to [PI](#pi), [Postdoc](#postdoc), [PhD](#phd), [master](#master), [visitor](#visitor), [honorary](#honary), [alumni](#alumni)
 
 ## PI
-{% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
+  {% if member.role == "pi" %}
+    <p class="pi">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" 
+           class="img-responsive" 
+           width="25%" 
+           style="float: left; margin-right: 15px;" />
+      
+      <strong>{{ member.name }}</strong><br>
 
-{% assign even_odd = number_printed | modulo: 2 %}
-
-{% if even_odd == 0 %}
-<div class="row" style="margin-bottom: 30px;">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left; margin-right: 15px;" />
-  
-  <h4 style="margin-top: 0;">{{ member.name }}</h4>
-  
-  <ul class="list-unstyled">
-    {% if member.email %}
-      <li><i class="fa fa-envelope"></i> <a href="mailto:{{ member.email }}">{{ member.email }}</a></li>
-    {% endif %}
-    
-    {% if member.orcid %}
-      <li><i class="ai ai-orcid"></i> <a href="https://orcid.org/{{ member.orcid }}">ORCID Profile</a></li>
-    {% endif %}
-    
-    {% if member.linkedin %}
-      <li><i class="fa fa-linkedin"></i> <a href="{{ member.linkedin }}">LinkedIn</a></li>
-    {% endif %}
-  </ul>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% comment %} Close the row after every 2 members or at the end of the loop {% endcomment %}
-{% if even_odd == 1 or forloop.last %}
-</div>
-{% endif %}
+      {% if member.email %}
+        <i class="fa fa-envelope"></i> 
+        <a href="mailto:{{ member.email }}">{{ member.email }}</a><br>
+      {% endif %}
+      
+      {% if member.orcid %}
+        <i class="ai ai-orcid"></i> 
+        <a href="https://orcid.org/{{ member.orcid }}">ORCID Profile</a><br>
+      {% endif %}
+      
+      {% if member.linkedin %}
+        <i class="fa fa-linkedin"></i> 
+        <a href="{{ member.linkedin }}">LinkedIn</a>
+      {% endif %}
+    </p>
+  {% endif %}
 {% endfor %}
 
 ## Master and Bachelor Students
