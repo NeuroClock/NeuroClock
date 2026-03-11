@@ -26,7 +26,7 @@ Jump to [PI](#pi), [Postdoc](#postdoc), [PhD](#phd), [master](#master), [visitor
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left; margin-right: 15px;" /> -->
 
 <div class="col-sm-6 d-flex align-items-start">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" 
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}"
        class="img-responsive" 
        style="width: 25%; margin-right: 15px;" />
 
