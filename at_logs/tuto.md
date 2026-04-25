@@ -3,7 +3,7 @@
 
 # run
 - team
-_pages set the format of the team page
+_pages/team.md set the format of the team page
 
 
 
