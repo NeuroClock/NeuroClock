@@ -12,3 +12,62 @@
   email: er6@leicester.ac.uk
   orcid: 0000-0001-7297-4697
 
+- name: Dr Susanna Campesan
+  role: PostDoc
+  photo:
+  orcid:  
+  decription:  
+
+- name: Dr Celia Hansen 
+  role: Technician
+  photo:  
+  orcid:  
+  decription:  
+
+- name: Dr Filippo Nicolini 
+  role: PostDoc 
+  photo: Filippo Nicolini.jpg 
+  orcid: 0000-0002-3749-3932
+  website: 
+    - label: "Personal_web"
+	  url:   https://filonico.github.io/
+  decription: I am postdoc interested in the interplay between genome and complex trait evolution. Specifically, I am now focusing on how the molecular machinery underlying animal light detection has emerged and has been shaped, leveraging comparative genomics and single-cell transcriptomics on non bilaterian animal models. 
+
+- name: Dr Jess Ramsay 
+  role: PostDoc 
+  photo:  
+  orcid:  
+  decription:  
+
+- name: Dr Christiane Reick 
+  role: PostDoc 
+  photo:  
+  orcid:  
+  decription:  
+
+
+- name: Dr Emily Sample 
+  role: PostDoc 
+  photo:  
+  orcid:  
+  decription:  
+
+- name: Dr Dongfeng Wang 
+  role: PostDoc
+  photo:  
+  orcid:  
+  website: 
+	- label: "google_scholar"
+	  url: https://scholar.google.com/citations?user=VTdPrIUAAAAJ&hl=en
+  decription: I work with opsins in mosquitoes and fruit flies. I am interested in the evolution of vision systems and aim to understand how visual behaviour is encoded in the genome.
+
+- name: Lorena Rosen 
+  role: PostDoc
+  role2: BioClocks UK Coordinator
+  photo: Lorena_R b+w.jpg
+  website:
+    - label: "LinkedIn"
+	  url: https://www.linkedin.com/in/lorena-rosen-429012174/ 
+	- label: "BioClocks"
+	  url: https://www.bioclocks.uk
+  decription: I coordinate our national research network- BioClocks UK. BioClocks UK is a hub for biological rhythms research in the UK, supporting researchers to deliver impact through stakeholder interactions, outreach, training, and resource production. Our research network meets in person at our bi-annual Clock Clubs where hundreds of academics from around the country come together to share their research, learn new skills, and connect with members of the community. 

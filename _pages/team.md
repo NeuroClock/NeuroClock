@@ -89,6 +89,11 @@ Jump to [PI](#pi), [PostDoc/Technician](#postdoc), [Students](#students)
           {% if member.website %}
             <li><i class="fa fa-globe"></i> <a href="{{ member.website }}">Personal Website</a></li>
           {% endif %}
+
+          {% for site in member.website %}
+            <li><i class="fa fa-globe"></i> <a href="{{ site.url }}">{{ site.label }}</a></li>
+          {% endfor %}
+
         </ul>
 
         {% if member.description %}
@@ -113,7 +118,6 @@ Jump to [PI](#pi), [PostDoc/Technician](#postdoc), [Students](#students)
 {% if final_check != 0 %}
   </div>
 {% endif %}
-
 
 ## Students
 {% assign number_printed = 0 %}
