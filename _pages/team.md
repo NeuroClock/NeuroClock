@@ -86,11 +86,11 @@ Jump to [PI](#pi), [PostDoc/Technician](#postdoc), [Students](#students)
             <li><i class="ai ai-orcid"></i> <a href="https://orcid.org/{{ member.orcid }}">ORCID Profile</a></li>
           {% endif %}
           
-          {% if member.website %}
+          <!-- {% if member.website %}
             <li><i class="fa fa-globe"></i> <a href="{{ member.website }}">Personal Website</a></li>
-          {% endif %}
+          {% endif %} -->
 
-          {% for site in member.website %}
+          {% for site in member.websites %}
             <li><i class="fa fa-globe"></i> <a href="{{ site.url }}">{{ site.label }}</a></li>
           {% endfor %}
 
