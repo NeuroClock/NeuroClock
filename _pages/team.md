@@ -59,7 +59,7 @@ Jump to [PI](#pi), [PostDoc/Technician](#postdoc), [Students](#students)
 {% endif %}
 {% endfor %}
 
-## Postdoc/Technician
+## Postdoc
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
   
