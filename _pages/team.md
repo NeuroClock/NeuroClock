@@ -119,7 +119,7 @@ Jump to [PI](#pi), [PostDoc/Technician](#postdoc), [Students](#students)
   </div>
 {% endif %}
 
-## Students
+<!-- ## Students
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
   
@@ -177,4 +177,4 @@ Jump to [PI](#pi), [PostDoc/Technician](#postdoc), [Students](#students)
 {% assign final_check = number_printed | modulo: 2 %}
 {% if final_check != 0 %}
   </div>
-{% endif %}
+{% endif %} -->
