@@ -1,4 +1,4 @@
----
+<!-- ---
 tittle: "Clock Lab - Team"
 layout: gridlay
 excerpt: "Clock Lab: Team members"
@@ -188,4 +188,4 @@ Jump to [PI](#pi), [PostDoc/Technician](#postdoc), [Students](#students)
 {% assign final_check = number_printed | modulo: 2 %}
 {% if final_check != 0 %}
   </div>
-{% endif %}
+{% endif %} -->
